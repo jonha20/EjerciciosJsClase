@@ -6,7 +6,7 @@ function arrayNumerosOrdenados(){
     let num = 1;
     do {
       let numero = parseInt(prompt("Introduce numero: "));
-      if (numero == isNaN) {
+      if (isNaN(numero)) {
         alert("Eso no es un numero");
         break;
       } else {
@@ -16,7 +16,7 @@ function arrayNumerosOrdenados(){
         num = numero;
       }
     } while (num != 0);
-    return arraynumeros.sort(function (a, b) {
+    return arraynumeros.sort((a, b) => {
         return b - a;
       })
 }
