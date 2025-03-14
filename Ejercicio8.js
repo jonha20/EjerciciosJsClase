@@ -6,7 +6,7 @@ contarCaracteres(data,"a");*/
 
 function contarLetras(arrayPalabras) {
   let num = 0;
-  data.forEach((palabras) => {
+  arrayPalabras.forEach((palabras) => {
     const separacion = palabras.split("");
     separacion.forEach((letras) => {
       if (letras == "a") {
