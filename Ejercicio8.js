@@ -9,7 +9,7 @@ function contarLetras(arrayPalabras) {
   arrayPalabras.forEach((palabras) => {
     const separacion = palabras.split("");
     separacion.forEach((letras) => {
-      if (letras == "a") {
+      if (letras == "a" || letras == "A") {
         num++;
       }
     });
