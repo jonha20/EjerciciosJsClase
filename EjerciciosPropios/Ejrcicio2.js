@@ -3,12 +3,13 @@ Crea una función en JavaScript que reciba un array de palabras y cuente cuánta
 const palabras = ["casa" , "comer", "cacatua", "pepino", "mota", "pirulo"]
 let numeroPalabras = 0;
 palabras.forEach(arraypalabras =>{
-    let numeroletras= 0;
-    arraypalabras.split("")
-    for (let i = 0; i < arraypalabras.length; i++) {
+    let numeroletras = 0;
+    const separarPalabras = arraypalabras.split("");
+    separarPalabras.forEach(() =>{
         numeroletras++
-    }
+    });
     if(numeroletras >= 5){
         numeroPalabras++
-    }
+    }return numeroPalabras;
 })
+console.log(numeroPalabras);
